@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 
-#root {
+main {
     width: 100%;
 }
 
@@ -29,7 +29,6 @@ header h1 {
 header nav {
     display: flex;
     justify-content: space-evenly;
-    padding: 0.3em;
     background-color: #415a77;
 }
 
@@ -37,6 +36,13 @@ header nav a {
     text-decoration: none;
     color: lightgrey;
     font-size: 18px;
+    width: 50%;
+    padding: 0.3em;
+    text-align: center;
+}
+
+header nav a:first-child {
+    border-right: 2px solid #0d1b2a;
 }
 
 header nav a.active {
@@ -53,7 +59,7 @@ header nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.3em;
+    padding: 3px 10px;
     background: #0d1b2a;
     width: 100%;
     color: lightgray;
