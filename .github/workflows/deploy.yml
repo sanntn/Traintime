@@ -12,11 +12,12 @@ jobs:
         with:
           host: ${{secrets.SSH_HOST}}
           key: ${{secrets.SSH_KEY}}
-          username: ${{ secrets.SSH_USERNAME }}
+          username: ${{secrets.SSH_USERNAME}}
+          password: ${{SSH_PASSWORD}}
 
           script: |
             mkdir /var/www/projects.santtuhaltsonen.fi/Traintime
             cd /var/www/projects.santtuhaltsonen.fi/Traintime
             git clone git@github.com:sanntn/Traintime.git
-            echo 'Deployment succesfull to Droplet'
+            echo 'Deployment succesful to Droplet'
             
